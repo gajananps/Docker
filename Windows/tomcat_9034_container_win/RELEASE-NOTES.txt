@@ -1,0 +1,25 @@
+Release Version: 
+Release Date: 
+Application name/Workload name: Apache Tomcat 
+Purpose: 
+Support OS Platform:  Windows Server 2019
+Support Topology: Single Server
+Workload Version: 9.0.34
+Dependency: Java-1.8.0_251
+RAM size: 8GB
+HardDisk size:100GB
+
+
+
+Docker commands:
+
+To Build Tomcat Image
+docker build -t tomcat-win:9.0.34
+
+To Container
+docker run -it -d --name ApacheTomcat -p 8080:8080 scriptdev/tomcat-win:9.0.34
+
+
+Note:
+
+    1. Access URL: http://<machine_ip - or - localhost>:<tomcat_port>
