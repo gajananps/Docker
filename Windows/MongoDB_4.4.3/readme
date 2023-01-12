@@ -1,0 +1,14 @@
+Release Date: 
+Workload name: MongoDB
+Support OS: Windows Server 2019
+Workload Version: 4.4.3
+Dependency: 
+
+Docker commands:
+docker run -d --rm -it --name=MongoDB_443_1x -p 27017:27017 mongodb:4.4.3
+
+Manual steps:
+
+	show dbs # list db
+	use mydb # create db
+	db
